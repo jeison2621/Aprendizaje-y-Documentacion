@@ -1,0 +1,8 @@
+Material Icon Theme = distingue mejor los iconos 
+
+componentes()
+
+es un codigo que se puede reutilizar, y siempre debe haber un componente que contenga al resto. muy parecido a una funcion. y debe iniciar el nombre por mayuscula si para distinguir entre funcion y componente
+
+
+
