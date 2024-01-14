@@ -39,6 +39,7 @@ Configurar Nombre que salen en los commits          //git config --global user.n
     
     git branch <nameBranch>         //Crea un branch
     git branch                      // Listar Branch
+    git checkout <name>
     git branch -d <nameBranch>      //Comando -d elimina el branch y lo une al master
     git branch -D <nameBranch>      //Elimina sin preguntar
     git fetch                       //Verifica cambios en el repositorio online con el local
