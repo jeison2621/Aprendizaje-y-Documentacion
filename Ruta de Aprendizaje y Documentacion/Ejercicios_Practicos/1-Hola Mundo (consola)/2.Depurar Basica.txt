@@ -1,0 +1,9 @@
+Depurando Hola Mundo
+
+Como se menciona en la introducción, VS Code envía con un depurador para las solicitudes Node.js. Intentemos depurar nuestra sencilla aplicación Hello World.
+
+Para establecer un punto de interrupción en app.js, poner el cursor del editor en la primera línea y pulse F9 o haga clic en la canalilla izquierda del editor junto a los números de línea. Un círculo rojo aparecerá en la cueva.
+
+- Para empezar a depurar, seleccione la vista Run and Debug en el Activity Bar:(Ctrl+Shift+D)
+
+- Ahora puede hacer clic en Debug toolbar green arrow o presionar F5 para lanzar y depurar "Hola Mundo". Su punto de interrupción será golpeado y usted puede ver y pasar a través de la simple aplicación. Observe que VS Code muestra una barra de estado de diferentes colores para indicar que está en modo Debug y se muestra la CONSOLE DEBUG.
