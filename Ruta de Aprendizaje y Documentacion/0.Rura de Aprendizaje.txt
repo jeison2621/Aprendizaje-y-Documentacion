@@ -1,122 +1,120 @@
 1 - Git - GitHub
+    Aprender Git y GitHub es fundamental para trabajar en proyectos de desarrollo de software de manera colaborativa. Aquí tienes una guía paso a paso para comenzar:
+    Paso 1: Instalar Git
 
- Git:
+    Descargar Git:
+        Visita la página oficial de Git y descarga la versión adecuada para tu sistema operativo.
 
-    Configuración Básica
+    Instalar Git:
+        Sigue las instrucciones de instalación proporcionadas en la página oficial.
 
-Configurar Nombre que salen en los commits          //git config --global user.name "DEV_Jeison_Moyano"
- Configurar Email                                   //git config --global user.email andres.moyano@misena.edu.co
+    Verificar la instalación:
+        Abre una terminal (en Linux y macOS) o el Git Bash (en Windows) y ejecuta el siguiente comando para asegurarte de que Git se haya instalado correctamente:
 
- empujar un repositorio existente desde la línea de comandos
+        bash
 
-    git remote add origin https://github.com/jeison2621/vsded.git   // ruta del repositorio remoto (Github)
-    git branch -M main
-    git push -u origin main
-    
-crear un nuevo repositorio en la línea de comandos()
+        git --version
 
- 
+    Paso 2: Configurar Git
+
+    Configurar nombre de usuario y correo electrónico:
+        Utiliza los siguientes comandos para configurar tu nombre de usuario y correo electrónico, que se usarán en los commits:
+
+        bash
+
+    git config --global user.name "Tu Nombre"
+    git config --global user.email "tu@email.com"
+
+    Configurar el editor de texto (opcional):
+
+    Si deseas cambiar el editor de texto que Git utiliza para los mensajes de commit, puedes hacerlo con el siguiente comando:
+
+    bash
+
+        git config --global core.editor "nombre_del_editor"
+
+    Paso 3: Iniciar un Repositorio Local
+
+    Inicializar un nuevo repositorio:
+        Navega a la carpeta de tu proyecto en la terminal y ejecuta:
+
+        bash
+
     git init
-    git añadir README.md
-    git commit -m "primer commit"
 
-    git remote add origin https://github.com/jeison2621/vsded.git       //para conectar con el reporsitorio remoto 
-    git push origen main                
+    Añadir archivos al repositorio:
 
+    Usa el siguiente comando para agregar archivos al área de preparación (staging):
 
-para descargar cambios del reporsitorio remoto utilizamos git pull
- 
-	git init                    //Iniciando repositorio
-    git add <archivo>           //Añadimos un archivos para el commit
-    git rm <archivo>            // elimina un archivo del reporsitorio
-    git add .                   //Añadimos todos los archivos para el commit
-    git log                         //Muestra los logs de los commits
-    git status 
+    bash
 
-    COMMIT
-    git commit -m "Texto del commit"
-    git log --oneline --graph   //Muestra graficos de los commits
-	git reset --soft HEAD^      //Devuelve el ultimo commit que se hizo y pone los cambios en staging
-	git reset --hard HEAD^      //Devuelve el ultimo commit y todos los cambios
-	git reset --hard HEAD^^     //Devuelve los 2 ultimo commit y todos los cambios
-	git log --oneline --stat    //Muestras los cambios en los commits
+    git add nombre_del_archivo
 
-    git clone <url>                 // 
-    git push origin master          //
-    git push <origien> <branch>     //
-    git log                         //Muestra los logs de los commits
-    git log --oneline --graph       //
-    git remote add origin <url>     //Agregar repositorio Remoto
-    git remote set-url origin <url> //cambiar de remoto
-    git remote rm <name/origin>     //Remover repositorio         
-    
-    git branch <nameBranch>         //Crea un branch
-    git branch                      // Listar Branch
-    git checkout <name>
-    git branch -d <nameBranch>      //Comando -d elimina el branch y lo une al master
-    git branch -D <nameBranch>      //Elimina sin preguntar
-    git fetch                       //Verifica cambios en el repositorio online con el local
-    git diff                        //Muestra los cambios realizados a un archivo
-	git diff --staged               //Muestra los cambios realizados a un archivo
-    
+    Realizar el primer commit:
 
- Descarga:       https://git-scm.com/download/win
- Documentacion:  https://git-scm.com/book/es/v2
+    Después de agregar archivos, realiza tu primer commit con el siguiente comando:
 
+    bash
 
- GitHub:
+        git commit -m "Primer commit"
 
- Curso de Git y GitHub:  https://www.youtube.com/watch?v=3GymExBkKjE&ab_channel=MoureDevbyBraisMoure 
+    Paso 4: Trabajar con Ramas (Branches)
 
- LECCIONES DEL CURSO:
-    00:00:00 | Introducción
-    00:03:15 | 1 - Introducción a Git
-    00:10:21 | 2 - Historia de Git
-    00:14:35 | 3 - Instalación de Git
-    00:24:00 | 4 - Comandos básicos de la terminal
-    00:30:13 | 5 - Configuración de Git
-    00:36:47 | 6 - "git init"
-    00:42:23 | 7 - Ramas en Git
-    00:45:21 | 8 - "git add" y "git commit"
-    00:53:27 | 9 - "git log" y "git status"
-    00:57:48 | 10 - "git checkout" y "git reset"
-    01:03:02 | 11 - "git alias"
-    01:05:05 | 12 - Fichero .gitignore
-    01:09:04 | 13 - "git diff"
-    01:11:54 | 14 - Desplazamiento en una rama
-    01:19:31 | 15 - "git reset --hard" y "git reflog"
-    01:27:37 | 16 - "git tag"
-    01:37:36 | 17 - "git branch" y "git switch"
-    01:49:06 | 18 - "git merge"
-    01:54:29 | 19 - Resolución de conflictos en Git
-    02:03:42 | 20 - "git stash"
-    02:10:11 | 21 - Reintegración de ramas en Git
-    02:16:26 | 22 - Eliminación de ramas en Git
-    02:22:27 | 23 - Introducción a GitHub
-    02:27:53 | 24 - Primeros pasos en GitHub
-    02:30:39 | 25 - Repositorio personal
-    02:42:40 | 26 - Local y Remoto
-    02:47:32 | 27 - Autenticación SSH en GitHub
-    03:00:45 | 28 - Repositorio proyecto
-    03:02:29 | 29 - "git remote"
-    03:07:19 | 30 - Subida de un proyecto a GitHub
-    03:11:31 | 31 - "git fetch" y "git pull"
-    03:16:41 | 32 - "git clone"
-    03:19:55 | 33 - "git push"
-    03:21:31 | 34 - "Fork" en GitHub
-    03:27:02 | 35 - Flujo colaborativo en GitHub
-    03:30:46 | 36 - "Pull Request (PR)" en GitHub
-    03:35:30 | 37 - Ejercicio práctico
-    03:37:41 | 38 - Resolución de conflictos en Pull Requests
-    03:53:31 | 39 - Sincronización de un Fork en GitHub
-    03:56:53 | 40 - Markdown en GitHub
-    04:00:37 | 41 - Herramientas gráficas (GUI) para Git y GitHub
-    04:18:36 | 42 - Git y GitHub "flow"
-    04:35:15 | 43 - Ejemplo Gitflow
-    04:52:49 | 44 - "git cherry-pick" y "git rebase"
-    05:00:05 | 45 - GitHub Pages Y Actions
-    05:04:24 | Próximos pasos
+    Crear una nueva rama:
+        Para trabajar en una característica o solucionar un problema, crea una nueva rama con:
 
+        bash
+
+    git branch nombre_de_la_rama
+
+    Cambiar a una rama:
+
+    Usa el siguiente comando para cambiar a la nueva rama:
+
+    bash
+
+    git checkout nombre_de_la_rama
+
+    Unir ramas (merge):
+
+    Cuando termines tu trabajo en una rama, puedes unirla a la rama principal (por ejemplo, master) con:
+
+    bash
+
+        git checkout master
+        git merge nombre_de_la_rama
+
+    Paso 5: Trabajar con Repositorios Remotos (GitHub)
+
+    Crear un repositorio en GitHub:
+        Ve a GitHub, inicia sesión, y crea un nuevo repositorio.
+
+    Conectar repositorio local con el remoto:
+        Usa el siguiente comando para agregar el repositorio remoto:
+
+        bash
+
+    git remote add origin URL_del_repositorio_en_GitHub
+
+    Subir cambios al repositorio remoto:
+
+    Después de realizar cambios locales, usa los siguientes comandos para subirlos a GitHub:
+
+    bash
+
+    git push -u origin nombre_de_la_rama
+
+    Clonar un repositorio remoto:
+
+    Si quieres trabajar en un proyecto existente, clona el repositorio con:
+
+    bash
+
+        git clone URL_del_repositorio_en_GitHub
+
+    Estos pasos proporcionan una base sólida para comenzar a trabajar con Git y GitHub. A medida que avanzas, puedes explorar características más avanzadas y practicar para consolidar tus habilidades.
+
+   
 2 - Visual Studio Code
 
     Url descarga: https://code.visualstudio.com
