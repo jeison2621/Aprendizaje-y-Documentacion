@@ -2,13 +2,6 @@
 
  Git:
 
-
-
- es un código libre y abierto sistema de control de versiones distribuidos diseñado para manejar todo, desde pequeño hasta proyectos muy grandes con velocidad y eficiencia.
-
- Git es fácil de aprender y tiene un diminutas huellas con un rendimiento rápido relámposo. Exclasta herramientas SMC como Subversion, CVS, Perforce y ClearCase con características como ramificación local barata, zonas de escenificación 
- conveniente, y múltiples flujos de trabajo.
-
     Configuración Básica
 
 Configurar Nombre que salen en los commits          //git config --global user.name "DEV_Jeison_Moyano"
