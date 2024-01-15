@@ -13,11 +13,31 @@
 
 Configurar Nombre que salen en los commits          //git config --global user.name "DEV_Jeison_Moyano"
  Configurar Email                                   //git config --global user.email andres.moyano@misena.edu.co
+
+ empujar un repositorio existente desde la línea de comandos
+
+    git remote add origin https://github.com/jeison2621/vsded.git   // ruta del repositorio remoto (Github)
+    git branch -M main
+    git push -u origin main
+    
+crear un nuevo repositorio en la línea de comandos()
+
+ 
+    git init
+    git añadir README.md
+    git commit -m "primer commit"
+
+    git remote add origin https://github.com/jeison2621/vsded.git       //para conectar con el reporsitorio remoto 
+    git push origen main                
+
+
+para descargar cambios del reporsitorio remoto utilizamos git pull
  
 	git init                    //Iniciando repositorio
     git add <archivo>           //Añadimos un archivos para el commit
     git rm <archivo>            // elimina un archivo del reporsitorio
     git add .                   //Añadimos todos los archivos para el commit
+    git log                         //Muestra los logs de los commits
     git status 
 
     COMMIT
