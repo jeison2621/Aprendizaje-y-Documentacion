@@ -1,0 +1,43 @@
+En Node.js y Express, puedes modularizar tu aplicación dividiendo tu código en diferentes módulos. Para importar funcionalidades de un módulo a otro, puedes usar la palabra clave require. Aquí hay un ejemplo básico de cómo podrías importar funcionalidades de un módulo a otro en una aplicación Express:
+
+Supongamos que tienes un módulo llamado moduloA.js que contiene algunas funciones:
+
+javascript
+
+// moduloA.js
+
+const funcionA = () => {
+  console.log('Función A ejecutada');
+}
+
+const funcionB = () => {
+  console.log('Función B ejecutada');
+}
+
+module.exports = {
+  funcionA,
+  funcionB
+};
+
+Luego, en otro módulo (por ejemplo, tu archivo principal de la aplicación), puedes importar estas funciones utilizando require:
+
+javascript
+
+// app.js
+
+const express = require('express');
+const moduloA = require('./moduloA'); // Asume que ambos archivos están en el mismo directorio
+
+const app = express();
+
+// Llamando a las funciones importadas
+moduloA.funcionA();
+moduloA.funcionB();
+
+app.listen(3000, () => {
+  console.log('Servidor escuchando en el puerto 3000');
+});
+
+En este ejemplo, moduloA.js exporta dos funciones (funcionA y funcionB). Estas funciones se importan en app.js usando require('./moduloA'). Luego, puedes llamar a esas funciones como parte de tu aplicación Express.
+
+Ten en cuenta que el uso de rutas relativas en require dependerá de la ubicación de tus archivos en tu estructura de carpetas. Ajusta las rutas según sea necesario en función de la estructura de tu proyecto.
