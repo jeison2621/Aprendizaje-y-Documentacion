@@ -1,0 +1,12 @@
+inicio manual en caso de error 
+
+npm init
+npm install create-react-app
+npx create-react-app myapp
+
+
+
+-------------------------------------------
+1.npx create-react-app react-course "se crea el proyecto"
+cd react-course			            "Nos ubicamos en el proyecto"
+npm start 			                "corremos el proyecto"

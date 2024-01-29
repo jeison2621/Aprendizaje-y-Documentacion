@@ -1,4 +1,6 @@
-var msg = 'Hello World';
+var msg =  require('./s')
 
-msg = "hello 2"
+
+
+
 console.log(msg)
